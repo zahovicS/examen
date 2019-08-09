@@ -1,0 +1,84 @@
+body{
+	margin:0;
+	padding: 0;
+  background-image: url(fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Blinker', sans-serif;
+}
+li a:hover {
+  background-color: #111;
+}
+.activo{
+	background-color: #007CE4;
+}
+
+.title{
+  font-family: 'Blinker', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.formulario{
+  margin-top: 60px; 
+  width: 25%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 20px white;
+  height: 280px;
+  background: white;
+}
+.formulario input[type=text],.formulario input[type=number]{
+  font-family: 'Blinker', sans-serif;
+  font-size: 25px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #0070CD;
+  background: none;
+}
+.formulario input[type=text]:focus{
+  outline: 0px;
+}
+.formulario button{
+  border: none;
+  font-size: 25px;
+  font-family: 'Blinker', sans-serif;
+  position: relative;
+  left: 50%;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  background: #0079DE;
+  color: white;
+  padding: 10px 20px;
+}
+.formulario button:hover{
+  cursor: pointer;
+  background: #005CA9;
+}
+.formulario button:focus{
+  outline: 0px;
+}
