@@ -48,7 +48,7 @@ li a:hover {
   height: 280px;
   background: white;
 }
-.formulario input[type=text],.formulario input[type=number]{
+.formulario input[type=text],.formulario input[type=number],.formulario input[type=password]{
   font-family: 'Blinker', sans-serif;
   font-size: 25px;
   display: block;
@@ -81,4 +81,14 @@ li a:hover {
 }
 .formulario button:focus{
   outline: 0px;
+}
+
+.resultado{
+  color: black;
+  font-family: 'Blinker', sans-serif;
+  font-size: 40px;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
 }

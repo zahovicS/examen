@@ -4,18 +4,13 @@
 	include "menu.php";
 ?>
 
-
-<div class="volver">
-	<button id="volver">Atras</button>
-</div>
-
 <?php
 extract($_POST);
 function VerificarEdad($edad){
 	if ($edad<18){
-		echo "<h2>Menor de Edad<h2/>";
+		echo "<h2 class='resultado'>Menor de Edad</h2>";
 	}else{
-		echo "<h2>Mayor de Edad<h2/>";
+		echo "<h2 class='resultado'>Mayor de Edad</h2>";
 	}
 }
 function verificarUsuario($user,$pass){
@@ -23,16 +18,18 @@ function verificarUsuario($user,$pass){
 	$password="clave2019";
 	if ($user==$usuario && $pass==$password)
 	{
-		echo "Correcto!";
+		echo "<h2 class='resultado'>Correcto!</h2>";
 	}
 	else
 	{
-		echo "Acceso Prohibido";
+		echo "<h2 class='resultado'>Acceso Prohibido</h2s>";
 	}
 }
 	if (isset($formularioUser))
 	{
-		echo "<h2>Usuario: </h2>",$nombre," ",$apellidos;
+		echo "<h2 class='resultado'>usuario</h2>";
+		echo "<h2 class='resultado'>Nombre: ",$nombre,"</h2>";
+		echo "<h2 class='resultado'>Apellidos: ",$apellidos,"</h2>";
 	}elseif (isset($formularioEdad)){
 		VerificarEdad($edad);
 	}elseif (isset($formularioIde)){
